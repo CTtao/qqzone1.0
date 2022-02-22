@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<beans>
+    <bean id="userBasicDAO" class="com.ct.qqzone.dao.impl.UserBasicDAOImpl"/>
+    <bean id="topicDAO" class="com.ct.qqzone.dao.impl.TopicDAOImpl"/>
+    <bean id="replyDAO" class="com.ct.qqzone.dao.impl.ReplyDAOImpl"/>
+    <bean id="hostReplyDAO" class="com.ct.qqzone.dao.impl.HostReplyDAOImpl"/>
+
+    <bean id="userBasicService" class="com.ct.qqzone.service.impl.UserBasicServiceImpl">
+        <property name="userBasicDAO" ref="userBasicDAO"/>
+    </bean>
+    <bean id="topicService" class="com.ct.qqzone.service.impl.TopicServiceImpl">
+        <property name="topicDAO" ref="topicDAO"/>
+        <property name="replyService" ref="replyService"/>
+        <property name="userBasicService" ref="userBasicService"/>
+    </bean>
+    <bean id="replyService" class="com.ct.qqzone.service.impl.ReplyServiceImpl">
+        <property name="replyDAO" ref="replyDAO"/>
+        <property name="hostReplyService" ref="hostReplyService"/>
+        <property name="userBasicService" ref="userBasicService"/>
+    </bean>
+    <bean id="hostReplyService" class="com.ct.qqzone.service.impl.HostReplyServiceImpl">
+        <property name="hostReplyDAO" ref="hostReplyDAO"/>
+    </bean>
+
+    <bean id="user" class="com.ct.qqzone.controller.UserController">
+        <property name="userBasicService" ref="userBasicService"/>
+        <property name="topicService" ref="topicService"/>
+    </bean>
+    <bean id="topic" class="com.ct.qqzone.controller.TopicController">
+        <property name="topicService" ref="topicService"/>
+    </bean>
+    <bean id="reply" class="com.ct.qqzone.controller.ReplyController">
+        <property name="replyService" ref="replyService"/>
+    </bean>
+    <bean id="add" class="com.ct.qqzone.controller.AddController">
+        <property name="topicService" ref="topicService"/>
+    </bean>
+
+    <bean id="page" class="com.ct.myssm.myspringmvc.PageController"/>
+</beans>

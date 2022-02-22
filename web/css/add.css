@@ -1,0 +1,16 @@
+body{
+    background-color: #E8E8FF;
+}
+#div_add_reply{
+    width:60%;
+    margin-left: 20%;
+    padding-bottom: 32px;
+}
+
+#div_add_reply input[type=text] {
+    width:98%;
+    border:0px dotted gray;
+}
+#div_add_reply textarea{
+    width: 98%;
+}
