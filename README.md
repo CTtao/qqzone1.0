@@ -1,4 +1,9 @@
 # qqzone1.0
+- 本项目为本人学习b站尚硅谷JavaWeb视频完成的仿qq空间项目，为非联网项目。
+- 数据库文件可参考
+链接：https://pan.baidu.com/s/1KGMM2n_njEMT-thB-8uaLA 
+提取码：svya
+- 项目启动后，访问网址后缀为/page.do?operate=page&page=login
 ## 1 熟悉QQZone业务需求
 1. 登录
 2. 登录成功，显示主界面。下方显示一排排日志。左侧显示好友列表：上侧显示欢迎词。如果不是自己的空间，显示超链接：**返回自己的空间**
