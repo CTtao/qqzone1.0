@@ -5,7 +5,7 @@ package com.ct.myssm.ioc;
 * @Param:
 * @return:
 * @Author: CT
-* @Date: 2022/2/6 11:06
+* @Date: 2022/1/6 11:06
 */
 public interface BeanFactory {
     Object getBean(String id);

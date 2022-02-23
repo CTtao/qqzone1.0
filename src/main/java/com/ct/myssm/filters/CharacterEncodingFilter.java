@@ -12,7 +12,7 @@ import java.io.IOException;
 * @Param:
 * @return:
 * @Author: CT
-* @Date: 2022/2/6 11:05
+* @Date: 2022/1/6 11:05
 */
 @WebFilter("*.do")
 public class CharacterEncodingFilter implements Filter {

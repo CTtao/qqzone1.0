@@ -5,7 +5,7 @@ package com.ct.myssm.myspringmvc;
 * @Param:
 * @return:
 * @Author: CT
-* @Date: 2022/2/6 10:59
+* @Date: 2022/1/6 10:59
 */
 public class DispatcherServletException extends RuntimeException{
     public DispatcherServletException(String msg){

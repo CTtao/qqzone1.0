@@ -14,7 +14,7 @@ import java.util.Properties;
 * @Param:
 * @return:
 * @Author: CT
-* @Date: 2022/2/6 11:04
+* @Date: 2022/1/6 11:04
 */
 public class ConnUtil {
 

@@ -5,7 +5,7 @@ package com.ct.myssm.basedao;
 * @Param:
 * @return:
 * @Author: CT
-* @Date: 2022/2/6 11:05
+* @Date: 2022/1/6 11:05
 */
 public class DAOException extends RuntimeException{
     public DAOException(String msg){
